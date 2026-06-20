@@ -52,6 +52,12 @@ nav a:hover {
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
   border: 2px solid #8fd3ff;
+  transition: 0.3s;
+}
+
+/* hover effect (FIXED) */
+.container:hover {
+  transform: scale(1.01);
 }
 
 /* LIST STYLE */
@@ -66,16 +72,15 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* OPTIONAL SMALL GLOW EFFECT */
-.container:hover {
-  transform: scale(1.01);
-  transition: 0.3s;
-  .transform {
+/* 🔥 TRANSFORMATION IMAGES ROW */
+.transform {
   display: flex;
   justify-content: center;
   gap: 15px;
+  margin-top: 20px;
 }
 
+/* SMALL IMAGE CARDS */
 .card {
   width: 130px;
   background: white;
@@ -84,10 +89,17 @@ nav a:hover {
   text-align: center;
 }
 
+/* SMALL IMAGES */
 .card img {
   width: 100%;
   height: 110px;
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* YEAR TEXT */
+.card h3 {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #061a40;
 }

@@ -29,7 +29,7 @@ nav a:hover {
   padding: 50px 20px;
 }
 
-/* BIG TITLE */
+/* TITLES */
 .hero h1 {
   font-size: 52px;
   font-weight: 900;
@@ -45,22 +45,24 @@ nav a:hover {
 /* LIGHT BLUE CARD */
 .container {
   max-width: 850px;
-  margin: auto;
+  margin: 20px auto;
   background: #cfe9ff;
   color: #061a40;
   padding: 30px;
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-  border: 2px solid #8fd3ff;
-  transition: 0.3s;
+
+  /* FIX LAG / JUMP */
+  transition: transform 0.2s ease;
+  will-change: transform;
 }
 
-/* hover effect (FIXED) */
+/* smooth hover (no scaling lag) */
 .container:hover {
-  transform: scale(1.01);
+  transform: translateY(-3px);
 }
 
-/* LIST STYLE */
+/* LIST */
 .container ul {
   text-align: left;
   font-size: 18px;
@@ -72,7 +74,7 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* 🔥 TRANSFORMATION IMAGES ROW */
+/* TRANSFORMATION ROW */
 .transform {
   display: flex;
   justify-content: center;
@@ -80,7 +82,7 @@ nav a:hover {
   margin-top: 20px;
 }
 
-/* SMALL IMAGE CARDS */
+/* SMALL CARDS */
 .card {
   width: 130px;
   background: white;
@@ -89,15 +91,16 @@ nav a:hover {
   text-align: center;
 }
 
-/* SMALL IMAGES */
+/* IMAGES */
 .card img {
   width: 100%;
   height: 110px;
   object-fit: cover;
   border-radius: 8px;
+  display: block;
 }
 
-/* YEAR TEXT */
+/* TEXT UNDER IMAGES */
 .card h3 {
   margin: 5px 0;
   font-size: 16px;

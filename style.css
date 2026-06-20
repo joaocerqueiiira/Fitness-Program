@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #061a40; /* dark blue background */
+  background: radial-gradient(circle at top, #1a4fa3, #061a40);
   color: white;
 }
 
@@ -20,4 +20,54 @@ nav a {
 }
 
 nav a:hover {
-  color: #8fd3ff
+  color: #8fd3ff;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* BIG TITLE */
+.hero h1 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #8fd3ff;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  color: #b3d9ff;
+  margin-bottom: 30px;
+}
+
+/* LIGHT BLUE CARD */
+.container {
+  max-width: 850px;
+  margin: auto;
+  background: #cfe9ff;
+  color: #061a40;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  border: 2px solid #8fd3ff;
+}
+
+/* LIST STYLE */
+.container ul {
+  text-align: left;
+  font-size: 18px;
+  line-height: 2;
+  padding-left: 25px;
+}
+
+.container li {
+  margin-bottom: 10px;
+}
+
+/* OPTIONAL SMALL GLOW EFFECT */
+.container:hover {
+  transform: scale(1.01);
+  transition: 0.3s;
+}

@@ -3,14 +3,35 @@
 }
 
 body {
+  body {
   font-family: Arial, sans-serif;
   margin: 0;
-
-  /* FIXED DARK BLUE THEME */
-  background: radial-gradient(circle at top, #1a4fa3, #061a40);
-
   color: white;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* PHYSIQUE BACKGROUND IMAGE */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("physique-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.12;
+  z-index: -2;
+}
+
+/* DARK BLUE OVERLAY */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, #1a4fa3, #061a40);
+  z-index: -3;
+}
 }
 
 /* NAV BAR */

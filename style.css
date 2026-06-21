@@ -2,39 +2,36 @@
   box-sizing: border-box;
 }
 
+/* PAGE */
 body {
-  body {
   font-family: Arial, sans-serif;
   margin: 0;
   color: white;
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
+  background: radial-gradient(circle at top, #1a4fa3, #061a40);
 }
 
-/* PHYSIQUE BACKGROUND IMAGE */
+/* PHYSIQUE BACKGROUND */
 body::before {
   content: "";
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
   background-image: url("physique-bg.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.12;
-  z-index: -2;
+  background-repeat: no-repeat;
+
+  opacity: 0.10;
+  z-index: -1;
 }
 
-/* DARK BLUE OVERLAY */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle at top, #1a4fa3, #061a40);
-  z-index: -3;
-}
-}
-
-/* NAV BAR */
+/* NAVIGATION */
 nav {
   background: #0b2e6b;
   padding: 15px;
@@ -42,6 +39,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
 
 nav a {
@@ -49,16 +47,17 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 nav a:hover {
   color: #8fd3ff;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   text-align: center;
-  padding: 50px 15px;
+  padding: 50px 20px;
 }
 
 .hero h1 {
@@ -73,16 +72,15 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-/* QUOTE */
 .quote {
   font-size: 18px;
+  color: #dbeafe;
   font-style: italic;
-  color: #b3d9ff;
 }
 
-/* MAIN WORKOUT BOX */
+/* WORKOUT DAY CARD */
 .day-card {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 25px auto;
   background: #cfe9ff;
   color: #061a40;
@@ -91,18 +89,23 @@ nav a:hover {
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
-/* SECTION TITLES */
 .day-card h2 {
   text-align: center;
+  color: #061a40;
   margin-bottom: 20px;
 }
 
-/* EXERCISE GRID (SIDE BY SIDE) */
+.day-card h3 {
+  text-align: center;
+  color: #1e3a8a;
+}
+
+/* EXERCISE GRID */
 .exercise-grid {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  justify-content: center;
+  gap: 15px;
   margin-bottom: 25px;
 }
 
@@ -113,20 +116,13 @@ nav a:hover {
   padding: 10px;
   border-radius: 12px;
   text-align: center;
+  transition: 0.3s;
 }
 
-/* SMALL IMAGES (FIXED SIZE) */
-.exercise-img {
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin-top: 5px;
-  background: #ddd;
+.exercise-card:hover {
+  transform: translateY(-3px);
 }
 
-/* TEXT */
 .exercise-card h3 {
   font-size: 14px;
   margin: 5px 0;
@@ -134,18 +130,42 @@ nav a:hover {
 }
 
 .exercise-card p {
-  font-size: 13px;
-  margin: 0;
+  font-size: 12px;
   color: #1e3a8a;
 }
 
-/* MOBILE FIX */
+/* EXERCISE IMAGES */
+.exercise-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-top: 5px;
+  border: 2px solid #8fd3ff;
+}
+
+/* PARAGRAPHS */
+.day-card p {
+  line-height: 1.7;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
+
   .hero h1 {
     font-size: 38px;
   }
 
+  .hero h2 {
+    font-size: 22px;
+  }
+
   .exercise-card {
     width: 130px;
+  }
+
+  .exercise-img {
+    height: 90px;
   }
 }

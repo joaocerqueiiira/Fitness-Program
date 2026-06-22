@@ -78,6 +78,55 @@ nav a:hover {
   font-style: italic;
 }
 
+/* TRAINING RULES + PROGRESSIVE OVERLOAD */
+
+.info-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 400px;
+  max-width: 550px;
+
+  background: #cfe9ff;
+  color: #061a40;
+
+  padding: 25px;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.3);
+}
+
+.info-box h2 {
+  text-align: center;
+  color: #061a40;
+  margin-bottom: 20px;
+}
+
+.info-box ul {
+  padding-left: 20px;
+}
+
+.info-box li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.info-box p {
+  text-align: center;
+  margin-top: 15px;
+  color: #1e3a8a;
+  font-style: italic;
+}
+
 /* WORKOUT DAY CARD */
 .day-card {
   max-width: 1000px;
@@ -145,7 +194,7 @@ nav a:hover {
   border: 2px solid #8fd3ff;
 }
 
-/* PARAGRAPHS */
+/* TEXT SECTIONS */
 .day-card p {
   line-height: 1.7;
 }
@@ -167,23 +216,14 @@ nav a:hover {
 
   .exercise-img {
     height: 90px;
-  .info-row{
-@media (max-width: 768px) {
-
-  .hero h1 {
-    font-size: 38px;
   }
 
-  .hero h2 {
-    font-size: 22px;
+  .info-row {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .exercise-card {
-    width: 130px;
+  .info-box {
+    min-width: 100%;
   }
-
-  .exercise-img {
-    height: 90px;
-  }
-
 }

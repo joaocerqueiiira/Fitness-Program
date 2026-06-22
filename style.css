@@ -167,5 +167,17 @@ nav a:hover {
 
   .exercise-img {
     height: 90px;
-  }
+  .info-row{
+display:flex;
+justify-content:center;
+gap:25px;
+max-width:1200px;
+margin:30px auto;
+flex-wrap:wrap;
+}
+
+.info-box{
+flex:1;
+min-width:450px;
+margin:0;
 }

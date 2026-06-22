@@ -168,16 +168,22 @@ nav a:hover {
   .exercise-img {
     height: 90px;
   .info-row{
-display:flex;
-justify-content:center;
-gap:25px;
-max-width:1200px;
-margin:30px auto;
-flex-wrap:wrap;
-}
+@media (max-width: 768px) {
 
-.info-box{
-flex:1;
-min-width:450px;
-margin:0;
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .exercise-card {
+    width: 130px;
+  }
+
+  .exercise-img {
+    height: 90px;
+  }
+
 }

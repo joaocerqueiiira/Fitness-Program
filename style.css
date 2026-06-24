@@ -257,4 +257,24 @@ nav a:hover {
   .info-box {
     min-width: 100%;
   }
+/* TRAINING RULES & PROGRESSIVE OVERLOAD TEXT */
+.info-box,
+.info-box h2,
+.info-box li,
+.info-box p {
+  color: #061a40 !important;
+}
+
+.info-box h2 {
+  color: #0b2e6b !important;
+  font-weight: bold;
+}
+
+.info-box li {
+  color: #1e3a8a !important;
+  font-weight: 600;
+}
+
+.info-box p {
+  color: #1e3a8a !important;
 }

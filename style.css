@@ -17,18 +17,20 @@ body {
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
 
-  background-image: url("physique-bg.jpg");
+  background-image: linear-gradient(
+      rgba(6, 26, 64, 0.85),
+      rgba(6, 26, 64, 0.85)
+    ),
+    url("physique-bg.jpg");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  opacity: 0.10;
   z-index: -1;
+}
 }
 
 /* NAVIGATION */

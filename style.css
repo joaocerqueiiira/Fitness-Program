@@ -192,15 +192,34 @@ nav a:hover {
   border: 2px solid #8fd3ff;
 }
 
-/* PROGRESS PHOTOS */
+/* PROGRESS SECTION */
+.progress-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.progress-card {
+  width: 180px;
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.progress-card h3 {
+  color: #061a40;
+  margin-top: 10px;
+}
+
 .progress-photo {
-  width: 220px;
-  height: 300px;
+  width: 100%;
+  height: 220px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 3px solid #8fd3ff;
-  display: block;
-  margin: auto;
 }
 
 /* MOBILE */
@@ -222,9 +241,12 @@ nav a:hover {
     height: 90px;
   }
 
+  .progress-card {
+    width: 150px;
+  }
+
   .progress-photo {
-    width: 170px;
-    height: 240px;
+    height: 190px;
   }
 
   .info-row {

@@ -31,7 +31,6 @@ body::before {
 
   z-index: -1;
 }
-}
 
 /* NAVIGATION */
 nav {
@@ -106,6 +105,8 @@ nav a:hover {
 .info-box h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: #0b2e6b;
+  font-weight: bold;
 }
 
 .info-box ul {
@@ -115,6 +116,8 @@ nav a:hover {
 .info-box li {
   margin-bottom: 10px;
   line-height: 1.5;
+  color: #1e3a8a;
+  font-weight: 600;
 }
 
 .info-box p {
@@ -122,6 +125,31 @@ nav a:hover {
   margin-top: 15px;
   color: #1e3a8a;
   font-style: italic;
+}
+
+/* 🆕 WORKOUT SECTION (FIX FOR YOUR PROBLEM) */
+.workout-section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 18px;
+
+  /* dark overlay so white text always readable */
+  background: rgba(0, 0, 0, 0.45);
+  color: #8fd3ff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.workout-section h2 {
+  color: #8fd3ff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.workout-section p,
+.workout-section li {
+  color: #dbeafe;
+  line-height: 1.6;
 }
 
 /* DAY CARDS */
@@ -259,24 +287,4 @@ nav a:hover {
   .info-box {
     min-width: 100%;
   }
-/* TRAINING RULES & PROGRESSIVE OVERLOAD TEXT */
-.info-box,
-.info-box h2,
-.info-box li,
-.info-box p {
-  color: #061a40 !important;
-}
-
-.info-box h2 {
-  color: #0b2e6b !important;
-  font-weight: bold;
-}
-
-.info-box li {
-  color: #1e3a8a !important;
-  font-weight: 600;
-}
-
-.info-box p {
-  color: #1e3a8a !important;
 }

@@ -1,102 +1,78 @@
-Complete your weekly check-in below.</p>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfCrfbxBTwamB3huiFv4zBa6o9BANs8Gwf1Lf9VrHccP5iItg/viewform?usp=publish-editor" target="_blank">
-  Submit Weekly Check-In
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Progress Tracker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="workout.html">Workouts</a>
+  <a href="workout.html">Workout</a>
   <a href="meals.html">Meal Plan</a>
   <a href="progress.html">Progress</a>
 </nav>
 
-<h1>Progress Tracker</h1>
+<section class="hero">
+  <h1>Progress Tracker</h1>
+  <h2>Track Your Results Throughout The 6 Weeks</h2>
+  <p class="quote">
+    "Small improvements every day lead to big results."
+  </p>
+</section>
 
-<h2>Weekly Checklist</h2>
+<div class="day-card">
 
-<h3>Week 1</h3>
-<ul>
-  <li>☐ Completed workouts</li>
-  <li>☐ Followed meal plan</li>
-  <li>☐ Hit step goal</li>
-  <li>☐ Took progress photos</li>
-</ul>
+  <h2>📊 Weekly Check-In</h2>
 
-<h3>Week 2</h3>
-<ul>
-  <li>☐ Completed workouts</li>
-  <li>☐ Followed meal plan</li>
-  <li>☐ Hit step goal</li>
-  <li>☐ Took progress photos</li>
-</ul>
+  <p style="text-align:center;">
+    Complete your weekly check-in below.
+  </p>
 
-<h3>Week 3</h3>
-<ul>
-  <li>☐ Completed workouts</li>
-  <li>☐ Followed meal plan</li>
-  <li>☐ Hit step goal</li>
-  <li>☐ Took progress photos</li>
-</ul>
+  <div style="text-align:center; margin-top:20px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCrfbxBTwamB3huiFv4zBa6o9BANs8Gwf1Lf9VrHccP5iItg/viewform?usp=publish-editor" target="_blank">
+      Submit Weekly Check-In
+    </a>
+  </div>
 
-<h3>Week 4</h3>
-<ul>
-  <li>☐ Completed workouts</li>
-  <li>☐ Followed meal plan</li>
-  <li>☐ Hit step goal</li>
-  <li>☐ Took progress photos</li>
-</ul>
-
-<h3>Week 5</h3>
-<ul>
-  <li>☐ Completed workouts</li>
-  <li>☐ Followed meal plan</li>
-  <li>☐ Hit step goal</li>
-  <li>☐ Took progress photos</li>
-</ul>
-
-<h3>Week 6</h3>
-<ul>
-  <li>☐ Completed workouts</li>
-  <li>☐ Followed meal plan</li>
-  <li>☐ Hit step goal</li>
-  <li>☐ Took progress photos</li>
-</ul>
-
-<h2>Before & After</h2>
-<p>Add your photos in your repo folder and display them here.</p>
-h2>Client Transformations</h2>
-
-<div>
-  <img src="before1.jpg" width="300">
-  <img src="after2.jpg" width="300">
 </div>
 
-<p>Before → After</p>
-  <link rel="stylesheet" href="style.css">
-  <div class="container">
-  <!-- your content here -->
+<div class="day-card">
+
+  <h2>✅ Weekly Checklist</h2>
+
+  <h3>Weeks 1–6</h3>
+
+  <ul>
+    <li>☐ Completed all workouts</li>
+    <li>☐ Followed meal plan</li>
+    <li>☐ Hit daily step goal</li>
+    <li>☐ Drank 2–4 litres of water</li>
+    <li>☐ Hit protein target</li>
+    <li>☐ Took progress photos</li>
+  </ul>
+
 </div>
-  <div class="day-card">
+
+<div class="day-card">
 
   <h2>📸 Front Transformation</h2>
 
   <div class="exercise-grid">
+
     <div class="exercise-card">
-      <img src="before1.jpg" class="exercise-img">
+      <img src="before1.jpg" class="progress-photo" alt="Front Before">
       <h3>Before</h3>
     </div>
 
     <div class="exercise-card">
-      <img src="after2.jpg" class="exercise-img">
+      <img src="after2.jpg" class="progress-photo" alt="Front After">
       <h3>After</h3>
     </div>
+
   </div>
 
 </div>
@@ -106,15 +82,17 @@ h2>Client Transformations</h2>
   <h2>💪 Back Transformation</h2>
 
   <div class="exercise-grid">
+
     <div class="exercise-card">
-      <img src="back-before.jpg" class="exercise-img">
+      <img src="back-before.jpg" class="progress-photo" alt="Back Before">
       <h3>Before</h3>
     </div>
 
     <div class="exercise-card">
-      <img src="back-after.jpg" class="exercise-img">
+      <img src="back-after.jpg" class="progress-photo" alt="Back After">
       <h3>After</h3>
     </div>
+
   </div>
 
 </div>
@@ -124,17 +102,33 @@ h2>Client Transformations</h2>
   <h2>🦵 Leg Transformation</h2>
 
   <div class="exercise-grid">
+
     <div class="exercise-card">
-      <img src="legs-before.jpg" class="exercise-img">
+      <img src="legs-before.jpg" class="progress-photo" alt="Leg Before">
       <h3>Before</h3>
     </div>
 
     <div class="exercise-card">
-      <img src="legs-after.jpg" class="exercise-img">
+      <img src="legs-after.jpg" class="progress-photo" alt="Leg After">
       <h3>After</h3>
     </div>
+
   </div>
 
 </div>
+
+<div class="day-card">
+
+  <h2>🏆 Results Take Time</h2>
+
+  <p>
+    These photos show what can happen through consistent training,
+    proper nutrition, and patience. Progress isn't always visible
+    day to day, but small improvements repeated over time create
+    incredible results.
+  </p>
+
+</div>
+
 </body>
 </html>
